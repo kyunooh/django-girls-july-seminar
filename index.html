@@ -6,72 +6,148 @@
 
 <html>
 <!-- html의 문서의 가장 기본적인 태그이고요 문서의 시작과 끝에 여는 태그와 닫는 태그로 구성됩니다. -->
-    <head>
+<head>
     <!-- 보통 브라우저에게 알려주는 정보들을 명기합니다. -->
-        <meta charset="utf-8">
-        <!-- meta 태그는 작성되고 있는 HTML 문서 자체의 정보들을 명기합니다. -->
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>장고걸스 세미나</title>
-        <!-- title 말 그대로 문서의 제목입니다. -->
-        <meta name="title" content="HTML과 CSS의 기본과 활용">
-        <meta name="author" content="최현묵">
-        <meta name="keywords" content="장고걸스, 세미나, HTML, CSS" />
-        <meta name="description" content="장고걸스 세미나를 위한 HTML 문서 입니다. 발표 제목은 HTML과 CSS의 활용입니다. 발표를 잘하고 싶습니다." />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style type="text/css">
+    <meta charset="utf-8">
+    <!-- meta 태그는 작성되고 있는 HTML 문서 자체의 정보들을 명기합니다. -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>장고걸스 세미나</title>
+    <!-- title 말 그대로 문서의 제목입니다. -->
+    <meta name="title" content="HTML과 CSS의 기본과 활용">
+    <meta name="author" content="최현묵">
+    <meta name="keywords" content="장고걸스, 세미나, HTML, CSS" />
+    <meta name="description" content="장고걸스 세미나를 위한 HTML 문서 입니다. 발표 제목은 HTML과 CSS의 활용입니다. 발표를 잘하고 싶습니다." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
         /* style  태그 안에는 보통 css와 같은 스타일시트의 내용이 들어옵니다.  */
         body {
             background-color: rgba(155, 155, 0, 0.2);
         }
-        </style>
-        <link rel="stylesheet" href="/css/djangogirls.css" charset="utf-8">
-        <!-- link 태그는 외부 자원을 연결해주는 데 사용됩니다. 스타일시트를 링크하는데 많이 사용합니다.  -->
-        <script>
-            //alert("안녕하세요! 만나서 반갑습니다.");
-            <!-- 자바스크립트 코드를 적어줍니다 -->
-        </script>
-        <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="   crossorigin="anonymous"></script>
-        <!-- 보통 이런식으로 외부에 파일을 가져와서 사용합니다. -->
-    </head>
-    <body>
-    <!-- 보통 실제 유저에게 보여지는 정보들을 적어줍니다. -->
-        <header>
-        </header>
-        <div>
+    </style>
+    <link rel="stylesheet" href="/css/djangogirls.css" charset="utf-8">
+    <!-- link 태그는 외부 자원을 연결해주는 데 사용됩니다. 스타일시트를 링크하는데 많이 사용합니다.  -->
+    <script>
+        //alert("안녕하세요! 만나서 반갑습니다.");
+        <!-- 자바스크립트 코드를 적어줍니다 -->
+    </script>
+    <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="   crossorigin="anonymous"></script>
+    <!-- 보통 이런식으로 외부에 파일을 가져와서 사용합니다. -->
+</head>
+<body>
+<!-- 보통 실제 유저에게 보여지는 정보들을 적어줍니다. -->
+    <div class="page-wrapper">
         <!-- division의 약자로 가장 일반적인 구획을 나눌 때 사용하는 태그입니다. -->
-            <article>
+        <article>
+            <div class="slide">
                 <h1>HTML과 CSS의 기본과 활용</h1>
                 <p>
                     안녕하세요. 7월 장고걸스 세미나를 하게 된 최현묵 입니다.
                 </p>
+            </div>
+
+            <div class="slide">
                 <h2>
                     HTML
                 </h2>
+            </div>
+
+            <div class="slide">
                 <h3>HTML은 무엇인가요?</h3>
+            </div>
+
+            <div class="slide">
                 <p>
                     HTML은 HyperText Markup Language의 약자입니다.
                 </p>
+            </div>
+
+            <div class="slide">
                 <h4>HyperText</h4>
                 <p>
                     HyperText는 한 문서에서 다른 문서로 이동이 가능한 텍스트를 의미합니다.
                 </p>
+            </div>
+
+            <div class="slide">
                 <h4>Markup Language</h4>
                 <p>
                     Markup Language 문서나 데이터의 구조를 명기하는 언어입니다.
                 </p>
+            </div>
+
+            <div class="slide">
                 <h2>HTML의 기본 구조</h2>
+            </div>
+            <div class="slide">
                 <h3>doctype</h3>
                 <p>
                     <code>&lt;!doctype html&gt;</code>와 같은 형태로 최상단에 선언 되는 doctype은 여러가지 html 버전이 있기 때문에, 어떤 버전의 HTML을 사용할 것인지 명시해줍니다.
                 </p>
+            </div>
+            <div class="slide">
                 <h3>html</h3>
                 <p>
                     <code>&lt;html&gt; ... &lt;/html&gt;</code> 와 같은 형태로 문서를 감싸줍니다.
                 </p>
-            </article>
-        </div>
-        <footer>
+            </div>
+            <div class="slide">
+                <h3>head</h3>
+                <p>
+                    <code>&lt;head&gt; ... &lt;/head&gt;</code> html 태그와 마찬가지로 이런형식으로 감싸집니다. 기본적으로 html의 대부분 태그는 이런식으로 감싸진다는 걸 기억하세요(예외도 존재합니다.) head 태그는 보통 컴퓨터에게 알려주는 정보들을 명기합니다.
+                </p>
+            </div>
+            <div class="slide">
+                <h4>meta</h4>
+                <p>meta 태그는 작성되고 있는 HTML 문서 자체의 정보들을 명기합니다. </p>
+                <p><img src="meta.png" alt="여러가지 메타 태그들이 나열 되어있다."></p>
+            </div>
+            <div class="slide">
+                <h4>style</h4>
+                <code>
+                    style  태그 안에는 보통 css와 같은 스타일시트의 내용이 들어옵니다.
+                    <p>&lt;style type="text/css"&gt;</p>
+                    <p>   /* 주석은 요렇게! */</p>
+                    <p>    <strong>body</strong> {</p>
+                    <p>        background-color: rgba(155, 155, 0, 0.2);</p>
+                    <p>   }</p>
+                    &lt;/style&gt;
+                </p></code>
+            </div>
+            <div class="slide">
+                <h4>link</h4>
+                <p>link 태그는 외부 자원을 연결해주는 데 사용됩니다. 스타일시트를 링크하는데 많이 사용합니다.</p>
+                <p><code>&lt;link rel="stylesheet" href="/css/djangogirls.css" charset="utf-8"&gt;</code></p>
+            </div>
 
-        </footer>
-    </body>
+            <div class="slide">
+                <h4>script</h4>
+                <p>
+                    스크립트 코드를 적기 위해 사용합니다.
+                </p>
+                <p>
+                    <code>
+                    &lt;script&gt;
+                        alert("안녕하세요! 만나서 반갑습니다.");
+                        <!-- 자바스크립트 코드를 적어줍니다 -->
+                    &lt;/script&gt;
+                    </code>
+                </p>
+                <p>
+                    보통은 아래와 같이 외부의 코드를 불러와서 사용합니다.
+                </p>
+                <p>
+                    <code>
+                    &lt;script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" &gt;&lt;/script&gt;
+                    </code>
+                </p>
+
+            </div>
+            <div class="slide">
+                <h3>body</h3>
+                <p>보통 실제 유저에게 보여지는 정보들을 적어줍니다. </p>
+            </div>
+
+        </article>
+    </div>
+</body>
 </html>
