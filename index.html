@@ -31,6 +31,9 @@
         <!-- 자바스크립트 코드를 적어줍니다 -->
     </script>
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/default.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+
     <!-- 보통 이런식으로 외부에 파일을 가져와서 사용합니다. -->
 </head>
 <body>
@@ -80,19 +83,19 @@
             <div class="slide">
                 <h3>doctype</h3>
                 <p>
-                    <code>&lt;!doctype html&gt;</code>와 같은 형태로 최상단에 선언 되는 doctype은 여러가지 html 버전이 있기 때문에, 어떤 버전의 HTML을 사용할 것인지 명시해줍니다.
+                    <pre><code>&lt;!doctype html&gt;</code></pre>와 같은 형태로 최상단에 선언 되는 doctype은 여러가지 html 버전이 있기 때문에, 어떤 버전의 HTML을 사용할 것인지 명시해줍니다.
                 </p>
             </div>
             <div class="slide">
                 <h3>html</h3>
                 <p>
-                    <code>&lt;html&gt; ... &lt;/html&gt;</code> 와 같은 형태로 문서를 감싸줍니다.
+                    <pre><code>&lt;html&gt; ... &lt;/html&gt;</code></pre> 와 같은 형태로 문서를 감싸줍니다.
                 </p>
             </div>
             <div class="slide">
                 <h3>head</h3>
                 <p>
-                    <code>&lt;head&gt; ... &lt;/head&gt;</code> html 태그와 마찬가지로 이런형식으로 감싸집니다. 기본적으로 html의 대부분 태그는 이런식으로 감싸진다는 걸 기억하세요(예외도 존재합니다.) head 태그는 보통 컴퓨터에게 알려주는 정보들을 명기합니다.
+                    <pre><code>&lt;head&gt; ... &lt;/head&gt;</code></pre> html 태그와 마찬가지로 이런형식으로 감싸집니다. 기본적으로 html의 대부분 태그는 이런식으로 감싸진다는 걸 기억하세요(예외도 존재합니다.) head 태그는 보통 컴퓨터에게 알려주는 정보들을 명기합니다.
                 </p>
             </div>
             <div class="slide">
@@ -103,14 +106,14 @@
             <div class="slide">
                 <h4>style</h4>
                 style  태그 안에는 보통 css와 같은 스타일시트의 내용이 들어옵니다.
-                <code>
-                    &lt;style type="text/css"&gt;<br>
-                    /* 주석은 요렇게! */<br>
-                    <strong>body</strong> {<br>
-                        background-color: rgba(155, 155, 0, 0.2);<br>
-                    }<br>
-                    &lt;/style&gt;
-                </code>
+                <p style="padding: 0px;"><pre><code style="font-size: 1vw;">
+&lt;style type="text/css"&gt;<br>
+/* 주석은 요렇게! */<br>
+<strong>body</strong> {<br>
+    background-color: rgba(155, 155, 0, 0.2);<br>
+}<br>
+&lt;/style&gt;
+                </code></pre></p>
             </div>
             <div class="slide">
                 <h4>link</h4>
@@ -123,14 +126,12 @@
                 <p>
                     스크립트 코드를 적기 위해 사용합니다.
                 </p>
-                <p>
                     <code>
                     &lt;script&gt;
                         alert("안녕하세요! 만나서 반갑습니다.");
                         <!-- 자바스크립트 코드를 적어줍니다 -->
                     &lt;/script&gt;
                     </code>
-                </p>
                 <p>
                     보통은 아래와 같이 외부의 코드를 불러와서 사용합니다.
                 </p>
@@ -155,13 +156,13 @@
             <div class="slide">
                 <h4>heading(h1 ... h6)</h4>
                 <p>heading 태그는 보통 제목을 표시할 때 많이 사용합니다. &lt;h1&gt;와 같은 형태로 표현하며, 아래와 같이 6가지로 표현됩니다.</p>
-                <p>
-                  <h1>안녕하세요. 저는 h1입니다.</h1>
-                  <h2>안녕하세요. 저는 h2입니다.</h2>
-                  <h3>안녕하세요. 저는 h3입니다.</h3>
-                  <h4>안녕하세요. 저는 h4입니다.</h4>
-                  <h5>안녕하세요. 저는 h5입니다.</h5>
-                  <h6>안녕하세요. 저는 h6입니다.</h6>
+                <p style="padding: 0px;">
+                  <h1 style="padding: 0px; margin:10px;">안녕하세요. 저는 h1입니다.</h1>
+                  <h2 style="padding: 0px; margin:10px;">안녕하세요. 저는 h2입니다.</h2>
+                  <h3 style="padding: 0px; margin:10px;">안녕하세요. 저는 h3입니다.</h3>
+                  <h4 style="padding: 0px; margin:10px;">안녕하세요. 저는 h4입니다.</h4>
+                  <h5 style="padding: 0px; margin:10px;">안녕하세요. 저는 h5입니다.</h5>
+                  <h6 style="padding: 0px; margin:10px;">안녕하세요. 저는 h6입니다.</h6>
                 </p>
             </div>
             <div class="slide">
@@ -216,12 +217,20 @@
         var slide = slides.get(i);
         slide.setAttribute("id", "slide" + i);
         slide.setAttribute("onclick", "moveDiv(\"slide" + (i+1) + "\")");
-
       }
 
       var moveDiv = function(divName) {
-        window.location.href = '#' + divName;
-      }
+        $('html,body').animate({
+           scrollTop: $("#" + divName).offset().top
+        });
+      };
+
+
+      $(document).ready(function() {
+        $('pre code').each(function(i, block) {
+          hljs.highlightBlock(block);
+        });
+      });
 
     </script>
 </body>
